@@ -1,0 +1,31 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginActivityView"
+    tools:context="uk.co.irokottaki.moneycontrol.LoginActivity"
+    android:background="@drawable/backgroundimg">
+    <!-- Update package name -->
+
+
+<Button
+android:id="@+id/sign_in_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/sign_in"
+android:layout_alignParentTop="true"
+android:background="@drawable/exportbutton"
+android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginLeft="-32dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:id="@+id/ImageView" />
+
+</RelativeLayout>

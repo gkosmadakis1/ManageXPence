@@ -1,0 +1,182 @@
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true" >
+
+
+    <!-- 600width  935height-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/editView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="uk.co.irokottaki.moneycontrol.EditActivity"
+        android:background="@drawable/backgroundimg"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginLeft="-32dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/ImageView" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infoEditButton"
+            android:src="@drawable/ic_info_outline_black_24dp"
+            android:background="#0000"
+            android:layout_gravity="end"
+            android:layout_alignRight="@+id/searchByDescButton"
+            android:layout_alignEnd="@+id/searchByDescButton"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Search by Description"
+            android:id="@+id/searchByDescButton"
+            android:background="@drawable/buttonsearchstyle"
+            android:layout_below="@+id/infoEditButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="12dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchByDescText"
+            android:hint="Enter description"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/searchByDescButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/searchByDescButton"
+            android:layout_toStartOf="@+id/searchByDescButton" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchByAmountText"
+            android:hint="Enter amount"
+            android:textSize="16sp"
+            android:layout_below="@+id/searchByDescButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/searchByDescText"
+            android:layout_alignEnd="@+id/searchByDescText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Search by Amount"
+            android:id="@+id/searchByAmountButton"
+            android:background="@drawable/buttonsearchstyle"
+            android:layout_alignBottom="@+id/searchByAmountText"
+            android:layout_alignRight="@+id/searchByDescButton"
+            android:layout_alignEnd="@+id/searchByDescButton"
+            android:layout_alignLeft="@+id/searchByDescButton"
+            android:layout_alignStart="@+id/searchByDescButton"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Results"
+            android:id="@+id/resultsLabel"
+            android:layout_below="@+id/searchByAmountText"
+            android:layout_alignLeft="@+id/editButton"
+            android:layout_alignStart="@+id/editButton" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:id="@+id/editLine"
+            android:scrollbars="vertical"
+            android:editable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/searchByAmountButton"
+            android:layout_alignEnd="@+id/searchByAmountButton"
+            android:layout_below="@+id/resultsLabel" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Select"
+            android:id="@+id/selectButton"
+            android:background="@drawable/buttonselectstyle"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:layout_below="@+id/SingleEditText"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Delete"
+            android:id="@+id/deleteButton"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:background="#0000"
+            android:layout_alignTop="@+id/editButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Edit"
+            android:id="@+id/editButton"
+            android:src="@drawable/ic_done_black_24dp"
+            android:background="#0000"
+            android:layout_alignTop="@+id/selectButton"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SingleEditText"
+            android:selectAllOnFocus="true"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:layout_alignRight="@+id/searchByAmountButton"
+            android:layout_alignEnd="@+id/searchByAmountButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editLine" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/adEditView"
+            android:layout_below="@+id/selectButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string-array name="colorName">
+        <item>White</item>
+        <item>Light Orange</item>
+        <item>Default</item>
+        <item>Choose from Device</item>
+    </string-array>
+
+    <string-array name="colorCode">
+        <item name="0"> #EEEEEE</item>item>
+        <item name="1"> #FFCC80</item>
+        <item name="2"> #ffffff</item>
+        <item name="3"> #00000000</item>
+    </string-array>
+
+    <string-array name="yearItems">
+        <item>2015</item>
+        <item>2016</item>
+    </string-array>
+
+</resources>

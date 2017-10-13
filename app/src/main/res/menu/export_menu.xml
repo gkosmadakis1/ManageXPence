@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/exportDropbox"
+        android:title="Export to DROPBOX"/>
+    <item
+        android:id="@+id/exportTxt"
+        android:title="Export TXT"/>
+
+    <item
+        android:id="@+id/exportPdf"
+        android:title="Export PDF"/>
+
+</menu>
